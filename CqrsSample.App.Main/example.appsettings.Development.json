@@ -1,0 +1,21 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+
+  "Auth0": {
+    "Domain": "",
+    "ClientId": "",
+    "Audience": "",
+    "Scope": ""
+  },
+  "Client": {
+    "SourcePath": "ClientApp",
+    "RootPath": "ClientApp/dist"
+  },
+  "DevServerUri": "http://localhost:8080"
+}

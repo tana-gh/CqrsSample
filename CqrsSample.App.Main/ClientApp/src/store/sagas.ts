@@ -1,21 +1,30 @@
-import { call, ForkEffect, put, takeEvery } from 'redux-saga/effects'
-import { Action, SendHello, ReceiveHello }  from './actions'
-import { helloSocket }                      from '../utils/webSockets'
+import * as Effects      from 'redux-saga/effects'
+import { AxiosResponse } from 'axios'
+import * as States       from './states'
+import * as Actions      from './actions'
+import * as Account      from '../utils/account'
 
-export function* saga(): Generator<ForkEffect<Action>, void> {
-    yield takeEvery('SEND_HELLO'   , sendHello)
-    yield takeEvery('RECEIVE_HELLO', receiveHello)
+export function* saga(): Generator<Effects.ForkEffect<Actions.Action>, void> {
+    yield Effects.takeEvery('SEND_NAME'    , sendHello)
 }
 
-function* sendHello(action: Action) {
-    yield call(data => helloSocket.send(data), (action as SendHello).payload.hello)
-}
+function* sendHello(action: Actions.Action) {
+    const state: States.State = yield Effects.select()
+    const getAccessToken = state.mainReducer.getAccessToken
 
-function* receiveHello(action: Action) {
-    yield put({
+    if (!getAccessToken) return
+
+    const hello: AxiosResponse<any> = yield Effects.call(async payload => {
+            const customAxios = await Account.customAxios(getAccessToken)
+            return await customAxios.post('/api/home/hello', {
+                name: payload.name
+            })
+        }, (action as Actions.SendName).payload)
+
+    yield Effects.put({
         type   : 'SET_HELLO_TEXT',
         payload: {
-            helloText: (action as ReceiveHello).payload.hello
+            helloText: hello.data.hello
         }
     })
 }

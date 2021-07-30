@@ -1,11 +1,10 @@
-import { helloString } from '../utils/strings'
+import * as Utils from '../utils/strings'
 
 export interface MainState {
-    loading    : boolean
-    name       : string
-    helloText  : string
-    contentText: string
-    contents   : string[]
+    loading       : boolean
+    getAccessToken: (() => Promise<string>) | undefined
+    name          : string
+    helloText     : string
 }
 
 export interface State {
@@ -13,11 +12,10 @@ export interface State {
 }
 
 export const initialMainState: MainState = {
-    loading    : true,
-    name       : 'world',
-    helloText  : helloString('world'),
-    contentText: 'content',
-    contents   : []
+    loading       : true,
+    getAccessToken: undefined,
+    name          : 'world',
+    helloText     : Utils.helloString('world')
 }
 
 export const initialState: State = {

@@ -1,18 +1,23 @@
 
 export type Action =
-    SetLoading     |
-    SetName        |
-    SetHelloText   |
-    SetContentText |
-    AddContent     |
-    RemoveContent  |
-    SendHello      |
+    SetLoading   |
+    SetAuth0     |
+    SetName      |
+    SetHelloText |
+    SendName     |
     ReceiveHello
 
 export interface SetLoading {
     type   : 'SET_LOADING'
     payload: {
         loading: boolean
+    }
+}
+
+export interface SetAuth0 {
+    type   : 'SET_AUTH0'
+    payload: {
+        getAccessToken: () => Promise<string>
     }
 }
 
@@ -30,30 +35,10 @@ export interface SetHelloText {
     }
 }
 
-export interface SetContentText {
-    type   : 'SET_CONTENT_TEXT'
+export interface SendName {
+    type   : 'SEND_NAME'
     payload: {
-        contentText: string
-    }
-}
-
-export interface AddContent {
-    type   : 'ADD_CONTENT'
-    payload: {
-    }
-}
-
-export interface RemoveContent {
-    type   : 'REMOVE_CONTENT'
-    payload: {
-        index: number
-    }
-}
-
-export interface SendHello {
-    type   : 'SEND_HELLO'
-    payload: {
-        hello: string
+        name: string
     }
 }
 

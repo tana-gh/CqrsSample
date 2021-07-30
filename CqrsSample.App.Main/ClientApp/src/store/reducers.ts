@@ -1,13 +1,18 @@
-import { combineReducers }  from 'redux'
-import { initialMainState } from './states'
-import { Action }           from './actions'
+import * as Redux   from 'redux'
+import * as States  from './states'
+import * as Actions from './actions'
 
-const mainReducer = (state = initialMainState, action: Action) => {
+const mainReducer = (state = States.initialMainState, action: Actions.Action) => {
     switch (action.type) {
         case 'SET_LOADING':
             return {
                 ...state,
                 loading: action.payload.loading
+            }
+        case 'SET_AUTH0':
+            return {
+                ...state,
+                getAccessToken: action.payload.getAccessToken
             }
         case 'SET_NAME':
             return {
@@ -19,40 +24,11 @@ const mainReducer = (state = initialMainState, action: Action) => {
                 ...state,
                 helloText: action.payload.helloText
             }
-        case 'SET_CONTENT_TEXT':
-            return {
-                ...state,
-                contentText: action.payload.contentText
-            }
-        case 'ADD_CONTENT':
-            return {
-                ...state,
-                contents: [
-                    ...state.contents,
-                    state.contentText
-                ]
-            }
-        case 'REMOVE_CONTENT':
-            return {
-                ...state,
-                contents: [
-                    ...(
-                        action.payload.index > 0
-                            ? state.contents.slice(0, action.payload.index)
-                            : []
-                    ),
-                    ...(
-                        action.payload.index < state.contents.length
-                            ? state.contents.slice(action.payload.index + 1, state.contents.length)
-                            : []
-                    )
-                ]
-            }
         default:
             return state
     }
 }
 
-export const reducer = combineReducers({
+export const reducer = Redux.combineReducers({
     mainReducer
 })

@@ -1,59 +1,54 @@
-import * as React                          from 'react'
-import { useSelector, useDispatch }        from 'react-redux'
-import * as Mui                            from '@material-ui/core'
-import { State }                           from '../store/states'
-import Contents                            from './Contents'
-import { helloString, contentCountString } from '../utils/strings'
+import * as React   from 'react'
+import * as Redux   from 'react-redux'
+import * as Mui     from '@material-ui/core'
+import * as Auth0   from '@auth0/auth0-react'
+import * as States  from '../store/states'
+import * as Actions from '../store/actions'
 
 export default (): React.FunctionComponentElement<void> => {
-    const [
-        name,
-        helloText,
-        contentText,
-        contents
-    ]: [
-        string,
-        string,
-        string,
-        string[]
-    ] = useSelector((state: State) => [
-        state.mainReducer.name,
-        state.mainReducer.helloText,
-        state.mainReducer.contentText,
-        state.mainReducer.contents
-    ])
-    const dispatch = useDispatch()
-    
-    const onNameChange = React.useCallback((ev: React.ChangeEvent<HTMLInputElement>) => dispatch({
-        type   : 'SET_NAME',
-        payload: {
-            name: ev.target.value
-        }
-    }), [ dispatch ])
-    
-    const onHelloClick = React.useCallback((_: React.MouseEvent) => dispatch({
-        type: 'SEND_HELLO',
-        payload: {
-            hello: helloString(name)
-        }
-    }), [ dispatch, name ])
+    const [ name, helloText ]: [ string, string] =
+        Redux.useSelector((state: States.State) => [
+            state.mainReducer.name,
+            state.mainReducer.helloText
+        ])
+    const dispatch = Redux.useDispatch<React.Dispatch<Actions.Action>>()
+    const { getAccessTokenSilently } = Auth0.useAuth0()
 
-    const onContentTextChange = React.useCallback((ev: React.ChangeEvent<HTMLInputElement>) => dispatch({
-        type: 'SET_CONTENT_TEXT',
-        payload: {
-            contentText: ev.target.value
-        }
-    }), [ dispatch ])
+    const getAccessToken = React.useCallback(() =>
+        getAccessTokenSilently({
+            audience: 'https://studio-ephyra.jp.auth0.com/api/v2/',
+            scope: 'read:current_user'
+        })
+    , [ getAccessTokenSilently ])
 
-    const onAddContentClick = React.useCallback((_: React.MouseEvent) => dispatch({
-        type: 'ADD_CONTENT',
-        payload: {
-        }
-    }), [ dispatch ])
+    React.useEffect(() =>
+        dispatch({
+            type   : 'SET_AUTH0',
+            payload: {
+                getAccessToken
+            }
+        })
+    , [ dispatch, getAccessTokenSilently ])
+    
+    const onNameChange = React.useCallback(
+        (ev: React.ChangeEvent<HTMLInputElement>) => dispatch({
+            type   : 'SET_NAME',
+            payload: {
+                name: ev.target.value
+            }
+        }), [ dispatch ])
+    
+    const onHelloClick = React.useCallback(
+        (_: React.MouseEvent) => dispatch({
+            type: 'SEND_NAME',
+            payload: {
+                name
+            }
+        }), [ dispatch, name ])
 
     React.useEffect(() => {
         document.title = `React Page - ${ helloText }`
-    })
+    }, [ helloText ])
 
     return (
         <article>
@@ -68,22 +63,6 @@ export default (): React.FunctionComponentElement<void> => {
                     <Mui.Button variant="contained" color="primary" onClick={onHelloClick}>
                         Hello
                     </Mui.Button>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <h3>
-                        <Mui.Typography>
-                            { contentCountString(contents.length) }
-                        </Mui.Typography>
-                    </h3>
-                    <Mui.TextField label="Content" value={contentText} onChange={onContentTextChange}/>
-                    <Mui.Button variant="contained" color="primary" onClick={onAddContentClick}>
-                        Add one content
-                    </Mui.Button>
-                    <div>
-                        <Contents/>
-                    </div>
                 </div>
             </section>
         </article>
