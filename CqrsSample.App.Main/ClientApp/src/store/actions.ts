@@ -2,10 +2,12 @@
 export type Action =
     SetLoading   |
     SetAuth0     |
+    ReqUserInfo  |
+    SetUserInfo  |
     SetName      |
     SetHelloText |
-    SendName     |
-    ReceiveHello
+    ReqHello     |
+    ResHello
 
 export interface SetLoading {
     type   : 'SET_LOADING'
@@ -18,6 +20,18 @@ export interface SetAuth0 {
     type   : 'SET_AUTH0'
     payload: {
         getAccessToken: () => Promise<string>
+    }
+}
+
+export interface ReqUserInfo {
+    type   : 'REQ_USER_INFO'
+    payload: Record<string, never>
+}
+
+export interface SetUserInfo {
+    type   : 'SET_USER_INFO'
+    payload: {
+        name: string
     }
 }
 
@@ -35,15 +49,15 @@ export interface SetHelloText {
     }
 }
 
-export interface SendName {
-    type   : 'SEND_NAME'
+export interface ReqHello {
+    type   : 'REQ_HELLO'
     payload: {
         name: string
     }
 }
 
-export interface ReceiveHello {
-    type   : 'RECEIVE_HELLO'
+export interface ResHello {
+    type   : 'RES_HELLO'
     payload: {
         hello: string
     }

@@ -14,6 +14,11 @@ const mainReducer = (state = States.initialMainState, action: Actions.Action) =>
                 ...state,
                 getAccessToken: action.payload.getAccessToken
             }
+        case 'SET_USER_INFO':
+            return {
+                ...state,
+                userInfo: action.payload
+            }
         case 'SET_NAME':
             return {
                 ...state,

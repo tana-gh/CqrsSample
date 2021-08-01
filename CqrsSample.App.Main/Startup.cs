@@ -41,7 +41,7 @@ namespace CqrsSample.App.Main
                 .AddJwtBearer(options =>
                 {
                     options.Authority = domain;
-                    options.Audience = Configuration["Auth0:Audience"];
+                    options.Audience  = Configuration["Auth0:Audience"];
                     options.TokenValidationParameters = new TokenValidationParameters()
                     {
                         NameClaimType = ClaimTypes.NameIdentifier

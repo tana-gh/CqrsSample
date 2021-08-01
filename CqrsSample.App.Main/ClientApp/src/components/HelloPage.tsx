@@ -12,23 +12,6 @@ export default (): React.FunctionComponentElement<void> => {
             state.mainReducer.helloText
         ])
     const dispatch = Redux.useDispatch<React.Dispatch<Actions.Action>>()
-    const { getAccessTokenSilently } = Auth0.useAuth0()
-
-    const getAccessToken = React.useCallback(() =>
-        getAccessTokenSilently({
-            audience: 'https://studio-ephyra.jp.auth0.com/api/v2/',
-            scope: 'read:current_user'
-        })
-    , [ getAccessTokenSilently ])
-
-    React.useEffect(() =>
-        dispatch({
-            type   : 'SET_AUTH0',
-            payload: {
-                getAccessToken
-            }
-        })
-    , [ dispatch, getAccessTokenSilently ])
     
     const onNameChange = React.useCallback(
         (ev: React.ChangeEvent<HTMLInputElement>) => dispatch({
@@ -40,7 +23,7 @@ export default (): React.FunctionComponentElement<void> => {
     
     const onHelloClick = React.useCallback(
         (_: React.MouseEvent) => dispatch({
-            type: 'SEND_NAME',
+            type: 'REQ_HELLO',
             payload: {
                 name
             }
