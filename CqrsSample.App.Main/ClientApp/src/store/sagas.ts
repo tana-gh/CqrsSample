@@ -23,7 +23,9 @@ function* reqUserInfo(action: Actions.ReqUserInfo) {
     yield Effects.put({
         type   : 'SET_USER_INFO',
         payload: {
-            name: userInfo.data.name
+            userInfo: {
+                ...userInfo.data
+            }
         }
     })
 }

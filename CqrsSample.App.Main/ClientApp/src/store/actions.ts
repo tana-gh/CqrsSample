@@ -1,3 +1,4 @@
+import * as States from "./states";
 
 export type Action =
     SetLoading   |
@@ -31,7 +32,7 @@ export interface ReqUserInfo {
 export interface SetUserInfo {
     type   : 'SET_USER_INFO'
     payload: {
-        name: string
+        userInfo: States.UserInfo
     }
 }
 

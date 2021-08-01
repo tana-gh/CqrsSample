@@ -1,10 +1,11 @@
-import * as React from 'react'
-import ReactDOM   from 'react-dom'
-import * as Redux from 'react-redux'
-import * as Auth0 from '@auth0/auth0-react'
-import axios      from 'axios'
-import * as Store from './store'
-import App        from './components/App'
+import * as React  from 'react'
+import ReactDOM    from 'react-dom'
+import * as Redux  from 'react-redux'
+import * as Router from 'react-router-dom'
+import * as Auth0  from '@auth0/auth0-react'
+import axios       from 'axios'
+import * as Store  from './store'
+import App         from './components/App'
 import '../assets/scss/style.scss'
 
 axios.get('/api/auth0/keys')
@@ -36,7 +37,9 @@ const Main = (props: Props) => {
                 redirectUri={window.location.origin}
             >
                 <AppContext.Provider value={{ keys: props.keys }}>
-                    <App/>
+                    <Router.HashRouter basename="/" hashType="slash">
+                        <App/>
+                    </Router.HashRouter>
                 </AppContext.Provider>
             </Auth0.Auth0Provider>
         </Redux.Provider>

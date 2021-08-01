@@ -2,8 +2,10 @@ import * as React   from 'react'
 import * as Redux   from 'react-redux'
 import * as Router  from 'react-router-dom'
 import * as Mui     from '@material-ui/core'
+import * as Icons   from '@material-ui/icons'
 import * as Auth0   from '@auth0/auth0-react'
 import IndexPage    from './IndexPage'
+import ProfilePage  from './ProfilePage'
 import HelloPage    from './HelloPage'
 import NotFoundPage from './NotFoundPage'
 import * as Main    from '../index'
@@ -17,14 +19,15 @@ const useStyles = Mui.makeStyles({
 })
 
 export default (): React.FunctionComponentElement<void> => {
-    const classes      = useStyles()
-    const appContext   = React.useContext(Main.AppContext)
-    const [ userInfo ] = Redux.useSelector((state: States.State) => [ state.mainReducer.userInfo ])
-    const dispatch     = Redux.useDispatch<React.Dispatch<Actions.Action>>()
+    const classes    = useStyles()
+    const appContext = React.useContext(Main.AppContext)
+    const dispatch   = Redux.useDispatch<React.Dispatch<Actions.Action>>()
+    const history    = Router.useHistory()
     const {
         isLoading,
         isAuthenticated,
-        getAccessTokenSilently
+        getAccessTokenSilently,
+        logout
     } = Auth0.useAuth0()
 
     const getAccessToken = React.useCallback(() =>
@@ -50,26 +53,58 @@ export default (): React.FunctionComponentElement<void> => {
         })
     }, [ dispatch, isAuthenticated ])
 
+    const [ userMenuAnchor, setUserMenuAnchor ] = React.useState<Element | null>(null)
+    const openUserMenu  = React.useCallback((ev: React.UIEvent) => setUserMenuAnchor(ev.currentTarget), [ setUserMenuAnchor ])
+    const closeUserMenu = React.useCallback(()                  => setUserMenuAnchor(null)            , [ setUserMenuAnchor ])
+
+    const onIndexClick   = React.useCallback(() => {                          history.push('/')        }, [ history ])
+    const onProfileClick = React.useCallback(() => { setUserMenuAnchor(null); history.push('/profile') }, [ history ])
+    const onLogoutClick  = React.useCallback(() => { setUserMenuAnchor(null); logout()                 }, [ logout  ])
+
     return (
-        <Router.HashRouter basename="/" hashType="slash">
-            <header>
-                <Mui.AppBar position="fixed">
-                    <Mui.Toolbar>
-                        <Mui.Typography>
-                            React Page
-                        </Mui.Typography>
-                        <div className={classes.grow}/>
-                        <Mui.Typography>
-                            { userInfo.name }
-                        </Mui.Typography>
-                    </Mui.Toolbar>
-                </Mui.AppBar>
-                <Mui.Toolbar/>
-            </header>
+        <>
+            <Mui.AppBar position="fixed">
+                <Mui.Toolbar>
+                    <Mui.Button color="inherit" onClick={onIndexClick}>
+                        React Page
+                    </Mui.Button>
+                    <div className={classes.grow}/>
+                    {
+                        isAuthenticated &&
+                            <>
+                                <Mui.IconButton color="inherit" onClick={openUserMenu}>
+                                    <Icons.AccountCircle/>
+                                </Mui.IconButton>
+                                <Mui.Menu
+                                    anchorEl={userMenuAnchor}
+                                    open    ={!!userMenuAnchor}
+                                    onClose ={closeUserMenu}
+                                    anchorOrigin={{
+                                        vertical  : 'top',
+                                        horizontal: 'right'
+                                    }}
+                                    transformOrigin={{
+                                        vertical  : 'top',
+                                        horizontal: 'right'
+                                    }}
+                                    keepMounted
+                                >
+                                    <Mui.MenuItem onClick={onProfileClick}>
+                                        Profile
+                                    </Mui.MenuItem>
+                                    <Mui.MenuItem onClick={onLogoutClick}>
+                                        Logout
+                                    </Mui.MenuItem>
+                                </Mui.Menu>    
+                            </>
+                    }
+                </Mui.Toolbar>
+            </Mui.AppBar>
+            <Mui.Toolbar/>
             <main>
                 { isLoading ? <Mui.CircularProgress/> : <AuthenticationRequired/> }
             </main>
-        </Router.HashRouter>
+        </>
     )
 }
 
@@ -77,6 +112,9 @@ const AuthenticationRequired = Auth0.withAuthenticationRequired(() =>
     <Router.Switch>
         <Router.Route exact path="/">
             <IndexPage/>
+        </Router.Route>
+        <Router.Route path="/profile">
+            <ProfilePage/>
         </Router.Route>
         <Router.Route path="/hello">
             <HelloPage/>

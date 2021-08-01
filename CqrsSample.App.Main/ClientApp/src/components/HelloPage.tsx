@@ -6,7 +6,7 @@ import * as States  from '../store/states'
 import * as Actions from '../store/actions'
 
 export default (): React.FunctionComponentElement<void> => {
-    const [ name, helloText ]: [ string, string] =
+    const [ name, helloText ] =
         Redux.useSelector((state: States.State) => [
             state.mainReducer.name,
             state.mainReducer.helloText

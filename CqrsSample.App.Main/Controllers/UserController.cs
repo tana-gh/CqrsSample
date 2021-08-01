@@ -20,11 +20,6 @@ namespace CqrsSample.App.Main.Controllers
         [HttpGet]
         public UserInfoRes Info()
         {
-            foreach (var claim in HttpContext.User.Claims)
-            {
-                System.Console.WriteLine(claim);
-            }
-
             return new UserInfoRes
             (
                 Name: HttpContext.User.Identity.Name

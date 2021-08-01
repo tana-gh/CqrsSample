@@ -9,7 +9,8 @@ export interface MainState {
 }
 
 export interface UserInfo {
-    name: string
+    name      : string
+    pictureUrl: string
 }
 
 export interface State {
@@ -20,7 +21,8 @@ export const initialMainState: MainState = {
     loading       : true,
     getAccessToken: undefined,
     userInfo: {
-        name: ''
+        name      : '',
+        pictureUrl: ''
     },
     name     : 'world',
     helloText: Utils.helloString('world')
