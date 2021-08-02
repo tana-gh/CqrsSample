@@ -19,10 +19,11 @@ const useStyles = Mui.makeStyles({
 })
 
 export default (): React.FunctionComponentElement<void> => {
-    const classes    = useStyles()
-    const appContext = React.useContext(Main.AppContext)
-    const dispatch   = Redux.useDispatch<React.Dispatch<Actions.Action>>()
-    const history    = Router.useHistory()
+    const classes      = useStyles()
+    const appContext   = React.useContext(Main.AppContext)
+    const [ userInfo ] = Redux.useSelector((state: States.State) => [ state.mainReducer.userInfo ])
+    const dispatch     = Redux.useDispatch<React.Dispatch<Actions.Action>>()
+    const history      = Router.useHistory()
     const {
         isLoading,
         isAuthenticated,
@@ -72,6 +73,9 @@ export default (): React.FunctionComponentElement<void> => {
                     {
                         isAuthenticated &&
                             <>
+                                <Mui.Typography>
+                                    { userInfo.username }
+                                </Mui.Typography>
                                 <Mui.IconButton color="inherit" onClick={openUserMenu}>
                                     <Icons.AccountCircle/>
                                 </Mui.IconButton>

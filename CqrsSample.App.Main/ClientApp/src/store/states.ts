@@ -9,8 +9,9 @@ export interface MainState {
 }
 
 export interface UserInfo {
-    name      : string
+    username  : string
     pictureUrl: string
+    providers : string[]
 }
 
 export interface State {
@@ -21,8 +22,9 @@ export const initialMainState: MainState = {
     loading       : true,
     getAccessToken: undefined,
     userInfo: {
-        name      : '',
-        pictureUrl: ''
+        username  : '',
+        pictureUrl: '',
+        providers : []
     },
     name     : 'world',
     helloText: Utils.helloString('world')

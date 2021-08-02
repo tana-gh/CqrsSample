@@ -1,7 +1,6 @@
 import * as React   from 'react'
 import * as Redux   from 'react-redux'
 import * as Mui     from '@material-ui/core'
-import * as Auth0   from '@auth0/auth0-react'
 import * as States  from '../store/states'
 import * as Actions from '../store/actions'
 

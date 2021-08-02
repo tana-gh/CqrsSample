@@ -5,7 +5,7 @@ namespace CqrsSample.App.Main.Controllers
 {
     [ApiController]
     [Route("api/error")]
-    public class ErrorController : ControllerBase
+    public class ErrorController : Controller
     {
         private ILogger<ErrorController> Logger { get; }
 

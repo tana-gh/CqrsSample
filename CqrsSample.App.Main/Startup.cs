@@ -1,3 +1,4 @@
+using System.Net.Http.Headers;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -8,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using CqrsSample.App.Main.Auth;
+using CqrsSample.Lib.Auth0;
 
 namespace CqrsSample.App.Main
 {
@@ -54,6 +56,13 @@ namespace CqrsSample.App.Main
             });
 
             services.AddSingleton<IAuthorizationHandler, HasScopeHandler>();
+
+            services.AddHttpClient("Default", httpClient =>
+            {
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            });
+
+            services.AddSingleton<IUserInfoResource, UserInfoResource>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

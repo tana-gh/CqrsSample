@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqrsSample.App.Main", "CqrsSample.App.Main\CqrsSample.App.Main.csproj", "{B014AF3C-1AD0-48AD-820B-373D034467D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqrsSample.Lib.Auth0", "CqrsSample.Lib.Auth0\CqrsSample.Lib.Auth0.csproj", "{5C83CC5E-CA0B-4463-8893-3AC66E3E1D90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{B014AF3C-1AD0-48AD-820B-373D034467D0}.Release|x64.Build.0 = Release|Any CPU
 		{B014AF3C-1AD0-48AD-820B-373D034467D0}.Release|x86.ActiveCfg = Release|Any CPU
 		{B014AF3C-1AD0-48AD-820B-373D034467D0}.Release|x86.Build.0 = Release|Any CPU
+		{5C83CC5E-CA0B-4463-8893-3AC66E3E1D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C83CC5E-CA0B-4463-8893-3AC66E3E1D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C83CC5E-CA0B-4463-8893-3AC66E3E1D90}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5C83CC5E-CA0B-4463-8893-3AC66E3E1D90}.Debug|x64.Build.0 = Debug|Any CPU
+		{5C83CC5E-CA0B-4463-8893-3AC66E3E1D90}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5C83CC5E-CA0B-4463-8893-3AC66E3E1D90}.Debug|x86.Build.0 = Debug|Any CPU
+		{5C83CC5E-CA0B-4463-8893-3AC66E3E1D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C83CC5E-CA0B-4463-8893-3AC66E3E1D90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C83CC5E-CA0B-4463-8893-3AC66E3E1D90}.Release|x64.ActiveCfg = Release|Any CPU
+		{5C83CC5E-CA0B-4463-8893-3AC66E3E1D90}.Release|x64.Build.0 = Release|Any CPU
+		{5C83CC5E-CA0B-4463-8893-3AC66E3E1D90}.Release|x86.ActiveCfg = Release|Any CPU
+		{5C83CC5E-CA0B-4463-8893-3AC66E3E1D90}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

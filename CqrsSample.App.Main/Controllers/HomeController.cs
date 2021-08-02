@@ -7,7 +7,7 @@ namespace CqrsSample.App.Main.Controllers
     [ApiController]
     [Route("api/home")]
     [Authorize]
-    public class HomeController : ControllerBase
+    public class HomeController : Controller
     {
         private ILogger<HomeController> Logger { get; }
 
@@ -18,22 +18,22 @@ namespace CqrsSample.App.Main.Controllers
 
         [Route("hello")]
         [HttpPost]
-        public HomeHelloRes Hello([FromBody] HomeHelloReq json)
+        public IActionResult Hello([FromBody] HomeHelloReq json)
         {
-            return new HomeHelloRes
+            return Json(new HomeHelloRes
             (
-                Hello: $"Hello, {json.Name}!"
-            );
+                hello: $"Hello, {json.name}!"
+            ));
         }
     }
 
     public record HomeHelloReq
     (
-        string Name
+        string name
     );
 
     public record HomeHelloRes
     (
-        string Hello
+        string hello
     );
 }

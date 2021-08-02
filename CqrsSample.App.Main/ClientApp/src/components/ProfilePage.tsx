@@ -26,22 +26,28 @@ export default (): React.FunctionComponentElement<void> => {
                         <>
                             <div>
                                 <Mui.Typography display="inline">User Name : </Mui.Typography>
-                                <Mui.TextField label="User Name" defaultValue={userInfo.name}/>
+                                <Mui.TextField label="User Name" defaultValue={userInfo.username}/>
                             </div>
                             <div>
                                 <Mui.Typography display="inline">Pictire URL : </Mui.Typography>
                                 <Mui.TextField label="Picture URL" defaultValue={userInfo.pictureUrl}/>
+                            </div>
+                            <div>
+                                { userInfo.providers.map(p => <Mui.Typography key={p} display="inline">{ p } </Mui.Typography>) }
                             </div>
                         </>
                         :
                         <>
                             <div>
                                 <Mui.Typography display="inline">User Name : </Mui.Typography>
-                                <Mui.TextField label="User Name" value={userInfo.name} contentEditable="false"/>
+                                <Mui.TextField label="User Name" value={userInfo.username}/>
                             </div>
                             <div>
                                 <Mui.Typography display="inline">Pictire URL : </Mui.Typography>
-                                <Mui.TextField label="Picture URL" value={userInfo.pictureUrl} contentEditable="false"/>
+                                <Mui.TextField label="Picture URL" value={userInfo.pictureUrl}/>
+                            </div>
+                            <div>
+                                { userInfo.providers.map(p => <Mui.Typography key={p} display="inline">{ p } </Mui.Typography>) }
                             </div>
                         </>
                 }

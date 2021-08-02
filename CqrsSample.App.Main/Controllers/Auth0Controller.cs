@@ -6,7 +6,7 @@ namespace CqrsSample.App.Main.Controllers
 {
     [ApiController]
     [Route("api/auth0")]
-    public class Auth0Controller : ControllerBase
+    public class Auth0Controller : Controller
     {
         private ILogger<Auth0Controller> Logger { get; }
         private IConfiguration Configuration { get; } 
@@ -19,23 +19,23 @@ namespace CqrsSample.App.Main.Controllers
 
         [Route("keys")]
         [HttpGet]
-        public Auth0KeysRes Keys()
+        public IActionResult Keys()
         {
-            return new Auth0KeysRes
+            return Json(new Auth0KeysRes
             (
-                Domain  : Configuration["Auth0:Domain"],
-                ClientId: Configuration["Auth0:ClientId"],
-                Audience: Configuration["Auth0:Audience"],
-                Scope   : Configuration["Auth0:Scope"]
-            );
+                domain  : Configuration["Auth0:Domain"],
+                clientId: Configuration["Auth0:ClientId"],
+                audience: Configuration["Auth0:Audience"],
+                scope   : Configuration["Auth0:Scope"]
+            ));
         }
     }
 
     public record Auth0KeysRes
     (
-        string Domain,
-        string ClientId,
-        string Audience,
-        string Scope
+        string domain,
+        string clientId,
+        string audience,
+        string scope
     );
 }
