@@ -3,23 +3,25 @@ import ReactDOM    from 'react-dom'
 import * as Redux  from 'react-redux'
 import * as Router from 'react-router-dom'
 import * as Auth0  from '@auth0/auth0-react'
-import axios       from 'axios'
 import * as Store  from './store'
 import App         from './components/App'
+import * as Http   from './utils/http'
 import '../assets/scss/style.scss'
 
-axios.get('/api/auth0/keys')
-    .then(keys => {
-        ReactDOM.render(<Main keys={keys.data}/>, document.getElementById('app'))
-    })
+Http.getJson('/api/auth0/keys')
+.then(obj => {
+    ReactDOM.render(<Main keys={obj as Auth0Keys}/>, document.getElementById('app'))
+})
+
+export interface Auth0Keys {
+    domain  : string
+    clientId: string
+    audience: string
+    scope   : string
+}
 
 export interface AppContextValue {
-    keys: {
-        domain  : string
-        clientId: string
-        audience: string
-        scope   : string
-    }
+    keys: Auth0Keys
 }
 
 export const AppContext = React.createContext({} as AppContextValue)

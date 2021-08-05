@@ -1,8 +1,7 @@
-import * as Effects      from 'redux-saga/effects'
-import { AxiosResponse } from 'axios'
-import * as States       from './states'
-import * as Actions      from './actions'
-import * as Account      from '../utils/account'
+import * as Effects from 'redux-saga/effects'
+import * as States  from './states'
+import * as Actions from './actions'
+import * as Http    from '../utils/http'
 
 export function* saga(): Generator<Effects.ForkEffect<Actions.Action>, void> {
     yield Effects.takeEvery('REQ_USER_INFO', reqUserInfo)
@@ -15,16 +14,15 @@ function* reqUserInfo(action: Actions.ReqUserInfo) {
 
     if (!getAccessToken) return
 
-    const userInfo: AxiosResponse<any> = yield Effects.call(async () => {
-            const customAxios = await Account.customAxios(getAccessToken)
-            return await customAxios.get('/api/user/info')
-        })
+    const userInfo: Record<string, unknown> = yield Effects.call(async () =>
+        await Http.getAuthJson('/api/user/info', getAccessToken)
+    )
 
     yield Effects.put({
         type   : 'SET_USER_INFO',
         payload: {
             userInfo: {
-                ...userInfo.data
+                ...userInfo
             }
         }
     })
@@ -36,17 +34,16 @@ function* reqHello(action: Actions.ReqHello) {
 
     if (!getAccessToken) return
 
-    const hello: AxiosResponse<any> = yield Effects.call(async payload => {
-            const customAxios = await Account.customAxios(getAccessToken)
-            return await customAxios.post('/api/home/hello', {
-                name: payload.name
-            })
-        }, action.payload)
+    const hello: Record<string, unknown> = yield Effects.call(async payload =>
+        await Http.postAuthJson('/api/home/hello', getAccessToken, {
+            name: payload.name
+        })
+    , action.payload)
 
     yield Effects.put({
         type   : 'SET_HELLO_TEXT',
         payload: {
-            helloText: hello.data.hello
+            helloText: hello.hello
         }
     })
 }
