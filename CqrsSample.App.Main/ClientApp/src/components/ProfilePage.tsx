@@ -20,37 +20,21 @@ export default (): React.FunctionComponentElement<void> => {
     return (
         <article>
             <div>
-                {
-                    editing
-                        ?
-                        <>
-                            <div>
-                                <Mui.Typography display="inline">User Name : </Mui.Typography>
-                                <Mui.TextField label="User Name" defaultValue={userInfo.username}/>
-                            </div>
-                            <div>
-                                <Mui.Typography display="inline">Pictire URL : </Mui.Typography>
-                                <Mui.TextField label="Picture URL" defaultValue={userInfo.pictureUrl}/>
-                            </div>
-                            <div>
-                                { userInfo.providers.map(p => <Mui.Typography key={p} display="inline">{ p } </Mui.Typography>) }
-                            </div>
-                        </>
-                        :
-                        <>
-                            <div>
-                                <Mui.Typography display="inline">User Name : </Mui.Typography>
-                                <Mui.TextField label="User Name" value={userInfo.username}/>
-                            </div>
-                            <div>
-                                <Mui.Typography display="inline">Pictire URL : </Mui.Typography>
-                                <Mui.TextField label="Picture URL" value={userInfo.pictureUrl}/>
-                            </div>
-                            <div>
-                                { userInfo.providers.map(p => <Mui.Typography key={p} display="inline">{ p } </Mui.Typography>) }
-                            </div>
-                        </>
-                }
+                <div>
+                    {
+                        userInfo.username &&
+                            <Mui.TextField key="username" label="User Name" defaultValue={userInfo.username} InputProps={{ readOnly: !editing }}/>
+                    }
+                </div>
+                <div>
+                    {
+                        userInfo.pictureUrl &&
+                            <Mui.TextField key="pictureUrl" label="Picture URL" defaultValue={userInfo.pictureUrl} InputProps={{ readOnly: !editing }}/>
+                    }
+                </div>
+                <div>
+                    { userInfo.providers.map(p => <Mui.Typography key={p} display="inline">{ p } </Mui.Typography>) }
+                </div>
                 <div>
                     <Mui.Button variant="contained" color="primary" onClick={onEditClick} disabled={editing}>
                         Edit
