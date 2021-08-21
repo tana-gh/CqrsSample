@@ -40,7 +40,12 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │     ├─ VendorName: Microsoft Corp.
 │     └─ VendorUrl: https://www.typescriptlang.org/
 ├─ Apache-2.0
-│  ├─ @webassemblyjs/leb128@1.11.0
+│  ├─ @humanwhocodes/config-array@0.5.0
+│  │  ├─ URL: git+https://github.com/humanwhocodes/config-array.git
+│  │  ├─ VendorName: Nicholas C. Zakas
+│  │  └─ VendorUrl: https://github.com/humanwhocodes/config-array#readme
+│  ├─ @webassemblyjs/leb128@1.11.1
+│  │  └─ URL: https://github.com/xtuc/webassemblyjs.git
 │  ├─ @xtuc/long@4.2.2
 │  │  ├─ URL: https://github.com/dcodeIO/long.js.git
 │  │  └─ VendorName: Daniel Wirtz
@@ -77,6 +82,9 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/eslint/eslint-visitor-keys.git
 │  │  ├─ VendorName: Toru Nagashima
 │  │  └─ VendorUrl: https://github.com/eslint/eslint-visitor-keys#readme
+│  ├─ fast-text-encoding@1.0.3
+│  │  ├─ URL: https://github.com/samthor/fast-text-encoding.git
+│  │  └─ VendorName: Sam Thorogood
 │  ├─ faye-websocket@0.11.4
 │  │  ├─ URL: git://github.com/faye/faye-websocket-node.git
 │  │  ├─ VendorName: James Coglan
@@ -89,11 +97,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/ehmicky/human-signals.git
 │  │  ├─ VendorName: ehmicky
 │  │  └─ VendorUrl: https://git.io/JeluP
-│  ├─ indefinite-observable@2.0.1
-│  │  ├─ URL: git@github.com:material-motion/indefinite-observable-js.git
-│  │  ├─ VendorName: The Indefinite Observable Authors
-│  │  └─ VendorUrl: https://github.com/material-motion/indefinite-observable-js/#readme
-│  ├─ typescript@4.3.4
+│  ├─ typescript@4.3.5
 │  │  ├─ URL: https://github.com/Microsoft/TypeScript.git
 │  │  ├─ VendorName: Microsoft Corp.
 │  │  └─ VendorUrl: https://www.typescriptlang.org/
@@ -114,23 +118,16 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │     ├─ VendorName: Domenic Denicola
 │     └─ VendorUrl: https://domenic.me/
 ├─ BSD-2-Clause
-│  ├─ @typescript-eslint/parser@4.27.0
+│  ├─ @typescript-eslint/parser@4.28.5
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
-│  ├─ @typescript-eslint/typescript-estree@4.27.0
+│  ├─ @typescript-eslint/typescript-estree@4.28.5
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
 │  ├─ browser-process-hrtime@1.0.0
 │  │  ├─ URL: git://github.com/kumavis/browser-process-hrtime.git
 │  │  └─ VendorName: kumavis
-│  ├─ css-select@3.1.2
-│  │  ├─ URL: git://github.com/fb55/css-select.git
-│  │  └─ VendorName: Felix Boehm
 │  ├─ css-select@4.1.3
 │  │  ├─ URL: git://github.com/fb55/css-select.git
 │  │  └─ VendorName: Felix Boehm
-│  ├─ css-what@4.0.0
-│  │  ├─ URL: https://github.com/fb55/css-what
-│  │  ├─ VendorName: Felix Böhm
-│  │  └─ VendorUrl: http://feedic.com
 │  ├─ css-what@5.0.1
 │  │  ├─ URL: https://github.com/fb55/css-what
 │  │  ├─ VendorName: Felix Böhm
@@ -194,7 +191,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/terser/terser
 │  │  ├─ VendorName: Mihai Bazon
 │  │  └─ VendorUrl: https://terser.org/
-│  ├─ terser@5.7.0
+│  ├─ terser@5.7.1
 │  │  ├─ URL: https://github.com/terser/terser
 │  │  ├─ VendorName: Mihai Bazon
 │  │  └─ VendorUrl: https://terser.org/
@@ -211,6 +208,10 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │     ├─ VendorName: Domenic Denicola
 │     └─ VendorUrl: https://domenic.me/
 ├─ BSD-3-Clause
+│  ├─ @humanwhocodes/object-schema@1.2.0
+│  │  ├─ URL: git+https://github.com/humanwhocodes/object-schema.git
+│  │  ├─ VendorName: Nicholas C. Zakas
+│  │  └─ VendorUrl: https://github.com/humanwhocodes/object-schema#readme
 │  ├─ @sinonjs/commons@1.8.3
 │  │  ├─ URL: git+https://github.com/sinonjs/commons.git
 │  │  └─ VendorUrl: https://github.com/sinonjs/commons#readme
@@ -270,7 +271,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  ├─ react-transition-group@4.4.2
 │  │  ├─ URL: https://github.com/reactjs/react-transition-group.git
 │  │  └─ VendorUrl: https://github.com/reactjs/react-transition-group#readme
-│  ├─ serialize-javascript@5.0.1
+│  ├─ serialize-javascript@6.0.0
 │  │  ├─ URL: git+https://github.com/yahoo/serialize-javascript.git
 │  │  ├─ VendorName: Eric Ferraiuolo
 │  │  └─ VendorUrl: https://github.com/yahoo/serialize-javascript
@@ -307,7 +308,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │     ├─ VendorName: Jeremy Stashewsky
 │     └─ VendorUrl: https://github.com/salesforce/tough-cookie
 ├─ CC-BY-4.0
-│  └─ caniuse-lite@1.0.30001238
+│  └─ caniuse-lite@1.0.30001248
 │     ├─ URL: https://github.com/browserslist/caniuse-lite.git
 │     ├─ VendorName: Ben Briggs
 │     └─ VendorUrl: http://beneb.info
@@ -362,18 +363,18 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  ├─ cliui@7.0.4
 │  │  ├─ URL: https://github.com/yargs/cliui.git
 │  │  └─ VendorName: Ben Coe
-│  ├─ css-declaration-sorter@6.0.3
+│  ├─ css-declaration-sorter@6.1.1
 │  │  ├─ URL: https://github.com/Siilwyn/css-declaration-sorter.git
 │  │  ├─ VendorName: Selwyn
 │  │  └─ VendorUrl: https://selwyn.cc/
-│  ├─ electron-to-chromium@1.3.752
+│  ├─ electron-to-chromium@1.3.791
 │  │  ├─ URL: https://github.com/kilian/electron-to-chromium/
 │  │  └─ VendorName: Kilian Valkhof
-│  ├─ fastq@1.11.0
+│  ├─ fastq@1.11.1
 │  │  ├─ URL: git+https://github.com/mcollina/fastq.git
 │  │  ├─ VendorName: Matteo Collina
 │  │  └─ VendorUrl: https://github.com/mcollina/fastq#readme
-│  ├─ flatted@3.1.1
+│  ├─ flatted@3.2.2
 │  │  ├─ URL: git+https://github.com/WebReflection/flatted.git
 │  │  ├─ VendorName: Andrea Giammarchi
 │  │  └─ VendorUrl: https://github.com/WebReflection/flatted#readme
@@ -393,7 +394,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/gulpjs/glob-parent.git
 │  │  ├─ VendorName: Gulp Team
 │  │  └─ VendorUrl: https://gulpjs.com/
-│  ├─ glob-parent@6.0.0
+│  ├─ glob-parent@6.0.1
 │  │  ├─ URL: https://github.com/gulpjs/glob-parent.git
 │  │  ├─ VendorName: Gulp Team
 │  │  └─ VendorUrl: https://gulpjs.com/
@@ -503,7 +504,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git+https://github.com/istanbuljs/test-exclude.git
 │  │  ├─ VendorName: Ben Coe
 │  │  └─ VendorUrl: https://istanbul.js.org/
-│  ├─ v8-to-istanbul@7.1.2
+│  ├─ v8-to-istanbul@8.0.0
 │  │  ├─ URL: https://github.com/istanbuljs/v8-to-istanbul.git
 │  │  └─ VendorName: Ben Coe
 │  ├─ which-module@2.0.0
@@ -545,10 +546,18 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  ├─ yargs-parser@13.1.2
 │  │  ├─ URL: git@github.com:yargs/yargs-parser.git
 │  │  └─ VendorName: Ben Coe
-│  └─ yargs-parser@20.2.7
+│  └─ yargs-parser@20.2.9
 │     ├─ URL: https://github.com/yargs/yargs-parser.git
 │     └─ VendorName: Ben Coe
 ├─ MIT
+│  ├─ @auth0/auth0-react@1.6.0
+│  │  ├─ URL: git+https://github.com/auth0/auth0-react.git
+│  │  ├─ VendorName: Auth0
+│  │  └─ VendorUrl: https://github.com/auth0/auth0-react#readme
+│  ├─ @auth0/auth0-spa-js@1.16.1
+│  │  ├─ URL: git://github.com/auth0/auth0-spa-js.git
+│  │  ├─ VendorName: Auth0
+│  │  └─ VendorUrl: https://github.com/auth0/auth0-spa-js#readme
 │  ├─ @babel/code-frame@7.12.11
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: Sebastian McKenzie
@@ -557,15 +566,15 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-code-frame
-│  ├─ @babel/compat-data@7.14.5
+│  ├─ @babel/compat-data@7.14.7
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/team
-│  ├─ @babel/core@7.14.6
+│  ├─ @babel/core@7.14.8
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-core
-│  ├─ @babel/generator@7.14.5
+│  ├─ @babel/generator@7.14.8
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-generator
@@ -581,7 +590,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/team
-│  ├─ @babel/helper-create-class-features-plugin@7.14.6
+│  ├─ @babel/helper-create-class-features-plugin@7.14.8
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/team
@@ -607,7 +616,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-helper-hoist-variables
-│  ├─ @babel/helper-member-expression-to-functions@7.14.5
+│  ├─ @babel/helper-member-expression-to-functions@7.14.7
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-helper-member-expression-to-functions
@@ -615,7 +624,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-helper-module-imports
-│  ├─ @babel/helper-module-transforms@7.14.5
+│  ├─ @babel/helper-module-transforms@7.14.8
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-helper-module-transforms
@@ -635,7 +644,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-helper-replace-supers
-│  ├─ @babel/helper-simple-access@7.14.5
+│  ├─ @babel/helper-simple-access@7.14.8
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-helper-simple-access
@@ -647,7 +656,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-helper-split-export-declaration
-│  ├─ @babel/helper-validator-identifier@7.14.5
+│  ├─ @babel/helper-validator-identifier@7.14.8
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/team
@@ -659,7 +668,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-helper-wrap-function
-│  ├─ @babel/helpers@7.14.6
+│  ├─ @babel/helpers@7.14.8
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-helpers
@@ -667,7 +676,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-highlight
-│  ├─ @babel/parser@7.14.6
+│  ├─ @babel/parser@7.14.8
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-parser
@@ -675,7 +684,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-bugfix-v8-spread-parameters-in-optional-chaining
-│  ├─ @babel/plugin-proposal-async-generator-functions@7.14.5
+│  ├─ @babel/plugin-proposal-async-generator-functions@7.14.7
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-proposal-async-generator-functions
@@ -711,7 +720,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-proposal-numeric-separator
-│  ├─ @babel/plugin-proposal-object-rest-spread@7.14.5
+│  ├─ @babel/plugin-proposal-object-rest-spread@7.14.7
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-proposal-object-rest-spread
@@ -806,7 +815,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-transform-computed-properties
-│  ├─ @babel/plugin-transform-destructuring@7.14.5
+│  ├─ @babel/plugin-transform-destructuring@7.14.7
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-transform-destructuring
@@ -854,7 +863,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-transform-modules-umd
-│  ├─ @babel/plugin-transform-named-capturing-groups-regex@7.14.5
+│  ├─ @babel/plugin-transform-named-capturing-groups-regex@7.14.7
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-transform-named-capturing-groups-regex
@@ -930,7 +939,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-plugin-transform-unicode-regex
-│  ├─ @babel/preset-env@7.14.5
+│  ├─ @babel/preset-env@7.14.8
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-preset-env
@@ -939,11 +948,11 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-preset-react
-│  ├─ @babel/runtime-corejs3@7.14.6
+│  ├─ @babel/runtime-corejs3@7.14.8
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/team
-│  ├─ @babel/runtime@7.14.6
+│  ├─ @babel/runtime@7.14.8
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-runtime
@@ -951,11 +960,11 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-template
-│  ├─ @babel/traverse@7.14.5
+│  ├─ @babel/traverse@7.14.8
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-traverse
-│  ├─ @babel/types@7.14.5
+│  ├─ @babel/types@7.14.8
 │  │  ├─ URL: https://github.com/babel/babel.git
 │  │  ├─ VendorName: The Babel Team
 │  │  └─ VendorUrl: https://babel.dev/docs/en/next/babel-types
@@ -969,7 +978,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  └─ VendorUrl: https://github.com/lahmatiy
 │  ├─ @emotion/hash@0.8.0
 │  │  └─ URL: https://github.com/emotion-js/emotion/tree/master/packages/hash
-│  ├─ @eslint/eslintrc@0.4.2
+│  ├─ @eslint/eslintrc@0.4.3
 │  │  ├─ URL: https://github.com/eslint/eslintrc.git
 │  │  ├─ VendorName: Nicholas C. Zakas
 │  │  └─ VendorUrl: https://github.com/eslint/eslintrc#readme
@@ -977,33 +986,33 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git+https://github.com/istanbuljs/schema.git
 │  │  ├─ VendorName: Corey Farrell
 │  │  └─ VendorUrl: https://github.com/istanbuljs/schema#readme
-│  ├─ @jest/console@27.0.2
+│  ├─ @jest/console@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ @jest/core@27.0.4
+│  ├─ @jest/core@27.0.6
 │  │  ├─ URL: https://github.com/facebook/jest
 │  │  └─ VendorUrl: https://jestjs.io/
-│  ├─ @jest/environment@27.0.3
+│  ├─ @jest/environment@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ @jest/fake-timers@27.0.3
+│  ├─ @jest/fake-timers@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ @jest/globals@27.0.3
+│  ├─ @jest/globals@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ @jest/reporters@27.0.4
+│  ├─ @jest/reporters@27.0.6
 │  │  ├─ URL: https://github.com/facebook/jest
 │  │  └─ VendorUrl: https://jestjs.io/
-│  ├─ @jest/source-map@27.0.1
+│  ├─ @jest/source-map@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ @jest/test-result@27.0.2
+│  ├─ @jest/test-result@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ @jest/test-sequencer@27.0.4
+│  ├─ @jest/test-sequencer@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ @jest/transform@27.0.2
+│  ├─ @jest/transform@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
 │  ├─ @jest/types@26.6.2
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ @jest/types@27.0.2
+│  ├─ @jest/types@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ @material-ui/core@4.11.4
+│  ├─ @material-ui/core@4.12.2
 │  │  ├─ URL: https://github.com/mui-org/material-ui.git
 │  │  ├─ VendorName: Material-UI Team
 │  │  └─ VendorUrl: https://material-ui.com/
@@ -1015,7 +1024,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/mui-org/material-ui.git
 │  │  ├─ VendorName: Material-UI Team
 │  │  └─ VendorUrl: https://github.com/mui-org/material-ui/tree/master/packages/material-ui-styles
-│  ├─ @material-ui/system@4.11.3
+│  ├─ @material-ui/system@4.12.1
 │  │  ├─ URL: https://github.com/mui-org/material-ui.git
 │  │  ├─ VendorName: Material-UI Team
 │  │  └─ VendorUrl: https://github.com/mui-org/material-ui/tree/master/packages/material-ui-system
@@ -1031,7 +1040,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  └─ URL: https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.scandir
 │  ├─ @nodelib/fs.stat@2.0.5
 │  │  └─ URL: https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.stat
-│  ├─ @nodelib/fs.walk@1.2.7
+│  ├─ @nodelib/fs.walk@1.2.8
 │  │  └─ URL: https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk
 │  ├─ @redux-saga/core@1.1.3
 │  │  ├─ URL: https://github.com/redux-saga/redux-saga/tree/master/packages/core
@@ -1057,7 +1066,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/redux-saga/redux-saga/tree/master/packages/types
 │  │  ├─ VendorName: Yassine ELOUAFI
 │  │  └─ VendorUrl: https://redux-saga.js.org/
-│  ├─ @testing-library/dom@7.31.2
+│  ├─ @testing-library/dom@8.1.0
 │  │  ├─ URL: https://github.com/testing-library/dom-testing-library
 │  │  ├─ VendorName: Kent C. Dodds
 │  │  └─ VendorUrl: https://github.com/testing-library/dom-testing-library#readme
@@ -1065,7 +1074,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/testing-library/jest-dom
 │  │  ├─ VendorName: Ernesto Garcia
 │  │  └─ VendorUrl: https://github.com/testing-library/jest-dom#readme
-│  ├─ @testing-library/react@11.2.7
+│  ├─ @testing-library/react@12.0.0
 │  │  ├─ URL: https://github.com/testing-library/react-testing-library
 │  │  ├─ VendorName: Kent C. Dodds
 │  │  └─ VendorUrl: https://github.com/testing-library/react-testing-library#readme
@@ -1073,36 +1082,43 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git://github.com/TooTallNate/once.git
 │  │  ├─ VendorName: Nathan Rajlich
 │  │  └─ VendorUrl: http://n8.io/
-│  ├─ @types/aria-query@4.2.1
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/babel__core@7.1.14
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/babel__generator@7.6.2
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/babel__template@7.4.0
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/babel__traverse@7.11.1
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/eslint-scope@3.7.0
-│  │  └─ URL: https://www.github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/eslint@7.2.13
+│  ├─ @types/aria-query@4.2.2
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/aria-query
+│  ├─ @types/babel__core@7.1.15
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/babel__core
+│  ├─ @types/babel__generator@7.6.3
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/babel__generator
+│  ├─ @types/babel__template@7.4.1
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/babel__template
+│  ├─ @types/babel__traverse@7.14.2
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/babel__traverse
+│  ├─ @types/eslint-scope@3.7.1
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/eslint-scope
+│  ├─ @types/eslint@7.28.0
 │  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 │  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/eslint
-│  ├─ @types/estree@0.0.47
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/estree@0.0.48
+│  ├─ @types/estree@0.0.50
 │  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 │  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/estree
-│  ├─ @types/glob@7.1.3
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  ├─ @types/glob@7.1.4
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/glob
 │  ├─ @types/graceful-fs@4.1.5
 │  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/history@4.7.8
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  ├─ @types/history@4.7.9
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/history
 │  ├─ @types/hoist-non-react-statics@3.3.1
 │  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/html-minifier-terser@5.1.1
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  ├─ @types/html-minifier-terser@5.1.2
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/html-minifier-terser
 │  ├─ @types/istanbul-lib-coverage@2.0.3
 │  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 │  ├─ @types/istanbul-lib-report@3.0.0
@@ -1110,97 +1126,111 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  ├─ @types/istanbul-reports@3.0.1
 │  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 │  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/istanbul-reports
-│  ├─ @types/jest@26.0.23
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/json-schema@7.0.7
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/minimatch@3.0.4
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/node@15.12.4
+│  ├─ @types/jest@26.0.24
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/jest
+│  ├─ @types/json-schema@7.0.8
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/json-schema
+│  ├─ @types/minimatch@3.0.5
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/minimatch
+│  ├─ @types/node@16.4.7
 │  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 │  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node
 │  ├─ @types/parse-json@4.0.0
 │  │  └─ URL: https://www.github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/prettier@2.3.0
+│  ├─ @types/prettier@2.3.2
 │  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 │  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/prettier
-│  ├─ @types/prop-types@15.7.3
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/react-dom@17.0.8
+│  ├─ @types/prop-types@15.7.4
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/prop-types
+│  ├─ @types/react-dom@17.0.9
 │  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 │  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-dom
-│  ├─ @types/react-redux@7.1.16
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/react-router-dom@5.1.7
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/react-router@5.1.15
+│  ├─ @types/react-redux@7.1.18
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-redux
+│  ├─ @types/react-router-dom@5.1.8
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-router-dom
+│  ├─ @types/react-router@5.1.16
 │  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 │  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-router
-│  ├─ @types/react-transition-group@4.4.1
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/react@17.0.11
+│  ├─ @types/react-transition-group@4.4.2
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-transition-group
+│  ├─ @types/react@17.0.15
 │  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 │  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react
-│  ├─ @types/scheduler@0.16.1
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/stack-utils@2.0.0
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/testing-library__jest-dom@5.14.0
+│  ├─ @types/scheduler@0.16.2
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/scheduler
+│  ├─ @types/stack-utils@2.0.1
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/stack-utils
+│  ├─ @types/testing-library__jest-dom@5.14.1
 │  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
 │  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/testing-library__jest-dom
-│  ├─ @types/yargs-parser@20.2.0
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/yargs@15.0.13
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @types/yargs@16.0.3
-│  │  └─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
-│  ├─ @typescript-eslint/eslint-plugin@4.27.0
+│  ├─ @types/yargs-parser@20.2.1
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/yargs-parser
+│  ├─ @types/yargs@15.0.14
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/yargs
+│  ├─ @types/yargs@16.0.4
+│  │  ├─ URL: https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│  │  └─ VendorUrl: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/yargs
+│  ├─ @typescript-eslint/eslint-plugin@4.28.5
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
-│  ├─ @typescript-eslint/experimental-utils@4.27.0
+│  ├─ @typescript-eslint/experimental-utils@4.28.5
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
-│  ├─ @typescript-eslint/scope-manager@4.27.0
+│  ├─ @typescript-eslint/scope-manager@4.28.5
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
-│  ├─ @typescript-eslint/types@4.27.0
+│  ├─ @typescript-eslint/types@4.28.5
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
-│  ├─ @typescript-eslint/visitor-keys@4.27.0
+│  ├─ @typescript-eslint/visitor-keys@4.28.5
 │  │  └─ URL: https://github.com/typescript-eslint/typescript-eslint.git
-│  ├─ @webassemblyjs/ast@1.11.0
+│  ├─ @webassemblyjs/ast@1.11.1
 │  │  ├─ URL: https://github.com/xtuc/webassemblyjs.git
 │  │  └─ VendorName: Sven Sauleau
-│  ├─ @webassemblyjs/floating-point-hex-parser@1.11.0
+│  ├─ @webassemblyjs/floating-point-hex-parser@1.11.1
 │  │  ├─ URL: https://github.com/xtuc/webassemblyjs.git
 │  │  └─ VendorName: Mauro Bringolf
-│  ├─ @webassemblyjs/helper-api-error@1.11.0
-│  │  └─ VendorName: Sven Sauleau
-│  ├─ @webassemblyjs/helper-buffer@1.11.0
+│  ├─ @webassemblyjs/helper-api-error@1.11.1
 │  │  ├─ URL: https://github.com/xtuc/webassemblyjs.git
 │  │  └─ VendorName: Sven Sauleau
-│  ├─ @webassemblyjs/helper-numbers@1.11.0
+│  ├─ @webassemblyjs/helper-buffer@1.11.1
 │  │  ├─ URL: https://github.com/xtuc/webassemblyjs.git
 │  │  └─ VendorName: Sven Sauleau
-│  ├─ @webassemblyjs/helper-wasm-bytecode@1.11.0
+│  ├─ @webassemblyjs/helper-numbers@1.11.1
 │  │  ├─ URL: https://github.com/xtuc/webassemblyjs.git
 │  │  └─ VendorName: Sven Sauleau
-│  ├─ @webassemblyjs/helper-wasm-section@1.11.0
+│  ├─ @webassemblyjs/helper-wasm-bytecode@1.11.1
 │  │  ├─ URL: https://github.com/xtuc/webassemblyjs.git
 │  │  └─ VendorName: Sven Sauleau
-│  ├─ @webassemblyjs/ieee754@1.11.0
-│  ├─ @webassemblyjs/utf8@1.11.0
+│  ├─ @webassemblyjs/helper-wasm-section@1.11.1
 │  │  ├─ URL: https://github.com/xtuc/webassemblyjs.git
 │  │  └─ VendorName: Sven Sauleau
-│  ├─ @webassemblyjs/wasm-edit@1.11.0
+│  ├─ @webassemblyjs/ieee754@1.11.1
+│  │  └─ URL: https://github.com/xtuc/webassemblyjs.git
+│  ├─ @webassemblyjs/utf8@1.11.1
 │  │  ├─ URL: https://github.com/xtuc/webassemblyjs.git
 │  │  └─ VendorName: Sven Sauleau
-│  ├─ @webassemblyjs/wasm-gen@1.11.0
+│  ├─ @webassemblyjs/wasm-edit@1.11.1
 │  │  ├─ URL: https://github.com/xtuc/webassemblyjs.git
 │  │  └─ VendorName: Sven Sauleau
-│  ├─ @webassemblyjs/wasm-opt@1.11.0
+│  ├─ @webassemblyjs/wasm-gen@1.11.1
 │  │  ├─ URL: https://github.com/xtuc/webassemblyjs.git
 │  │  └─ VendorName: Sven Sauleau
-│  ├─ @webassemblyjs/wasm-parser@1.11.0
+│  ├─ @webassemblyjs/wasm-opt@1.11.1
 │  │  ├─ URL: https://github.com/xtuc/webassemblyjs.git
 │  │  └─ VendorName: Sven Sauleau
-│  ├─ @webassemblyjs/wast-printer@1.11.0
+│  ├─ @webassemblyjs/wasm-parser@1.11.1
+│  │  ├─ URL: https://github.com/xtuc/webassemblyjs.git
+│  │  └─ VendorName: Sven Sauleau
+│  ├─ @webassemblyjs/wast-printer@1.11.1
 │  │  ├─ URL: https://github.com/xtuc/webassemblyjs.git
 │  │  └─ VendorName: Sven Sauleau
 │  ├─ @webpack-cli/configtest@1.0.4
@@ -1212,12 +1242,16 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  ├─ @webpack-cli/serve@1.5.1
 │  │  ├─ URL: https://github.com/webpack/webpack-cli.git
 │  │  └─ VendorUrl: https://github.com/webpack/webpack-cli/tree/master/packages/serve
+│  ├─ abortcontroller-polyfill@1.7.3
+│  │  ├─ URL: https://github.com/mo/abortcontroller-polyfill.git
+│  │  ├─ VendorName: Martin Olsson
+│  │  └─ VendorUrl: https://mo.github.io
 │  ├─ accepts@1.3.7
 │  │  └─ URL: https://github.com/jshttp/accepts.git
 │  ├─ acorn-globals@6.0.0
 │  │  ├─ URL: https://github.com/ForbesLindesay/acorn-globals.git
 │  │  └─ VendorName: ForbesLindesay
-│  ├─ acorn-jsx@5.3.1
+│  ├─ acorn-jsx@5.3.2
 │  │  ├─ URL: https://github.com/acornjs/acorn-jsx
 │  │  └─ VendorUrl: https://github.com/acornjs/acorn-jsx
 │  ├─ acorn-walk@7.2.0
@@ -1226,7 +1260,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  ├─ acorn@7.4.1
 │  │  ├─ URL: https://github.com/acornjs/acorn.git
 │  │  └─ VendorUrl: https://github.com/acornjs/acorn
-│  ├─ acorn@8.4.0
+│  ├─ acorn@8.4.1
 │  │  ├─ URL: https://github.com/acornjs/acorn.git
 │  │  └─ VendorUrl: https://github.com/acornjs/acorn
 │  ├─ agent-base@6.0.2
@@ -1244,7 +1278,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/ajv-validator/ajv.git
 │  │  ├─ VendorName: Evgeny Poberezkin
 │  │  └─ VendorUrl: https://github.com/ajv-validator/ajv
-│  ├─ ajv@8.6.0
+│  ├─ ajv@8.6.2
 │  │  ├─ URL: https://github.com/ajv-validator/ajv.git
 │  │  ├─ VendorName: Evgeny Poberezkin
 │  │  └─ VendorUrl: https://ajv.js.org/
@@ -1357,10 +1391,10 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git+https://github.com/alexindigo/asynckit.git
 │  │  ├─ VendorName: Alex Indigo
 │  │  └─ VendorUrl: https://github.com/alexindigo/asynckit#readme
-│  ├─ autoprefixer@10.2.6
+│  ├─ autoprefixer@10.3.1
 │  │  ├─ URL: https://github.com/postcss/autoprefixer.git
 │  │  └─ VendorName: Andrey Sitnik
-│  ├─ babel-jest@27.0.2
+│  ├─ babel-jest@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
 │  ├─ babel-loader@8.2.2
 │  │  ├─ URL: https://github.com/babel/babel-loader.git
@@ -1370,11 +1404,11 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git+https://github.com/airbnb/babel-plugin-dynamic-import-node.git
 │  │  ├─ VendorName: Jordan Gensler
 │  │  └─ VendorUrl: https://github.com/airbnb/babel-plugin-dynamic-import-node#readme
-│  ├─ babel-plugin-jest-hoist@27.0.1
+│  ├─ babel-plugin-jest-hoist@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
 │  ├─ babel-plugin-polyfill-corejs2@0.2.2
 │  │  └─ URL: https://github.com/babel/babel-polyfills.git
-│  ├─ babel-plugin-polyfill-corejs3@0.2.3
+│  ├─ babel-plugin-polyfill-corejs3@0.2.4
 │  │  └─ URL: https://github.com/babel/babel-polyfills.git
 │  ├─ babel-plugin-polyfill-regenerator@0.2.2
 │  │  └─ URL: https://github.com/babel/babel-polyfills.git
@@ -1382,7 +1416,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/nicolo-ribaudo/babel-preset-current-node-syntax.git
 │  │  ├─ VendorName: Nicolò Ribaudo
 │  │  └─ VendorUrl: https://github.com/nicolo-ribaudo
-│  ├─ babel-preset-jest@27.0.1
+│  ├─ babel-preset-jest@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
 │  ├─ balanced-match@1.0.2
 │  │  ├─ URL: git://github.com/juliangruber/balanced-match.git
@@ -1428,13 +1462,16 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/micromatch/braces.git
 │  │  ├─ VendorName: Jon Schlinkert
 │  │  └─ VendorUrl: https://github.com/micromatch/braces
+│  ├─ browser-tabs-lock@1.2.14
+│  │  ├─ URL: git+https://github.com/supertokens/browser-tabs-lock.git
+│  │  └─ VendorUrl: https://github.com/supertokens/browser-tabs-lock#readme
 │  ├─ browserslist@4.16.6
 │  │  ├─ URL: https://github.com/browserslist/browserslist.git
 │  │  └─ VendorName: Andrey Sitnik
 │  ├─ bs-logger@0.2.6
 │  │  ├─ URL: git+https://github.com/huafu/bs-logger.git
 │  │  └─ VendorName: Huafu Gandon
-│  ├─ buffer-from@1.1.1
+│  ├─ buffer-from@1.1.2
 │  │  └─ URL: https://github.com/LinusU/buffer-from.git
 │  ├─ buffer-indexof@1.1.1
 │  │  ├─ URL: git://github.com/soldair/node-buffer-indexof.git
@@ -1505,7 +1542,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/watson/ci-info.git
 │  │  ├─ VendorName: Thomas Watson Steen
 │  │  └─ VendorUrl: https://github.com/watson/ci-info
-│  ├─ cjs-module-lexer@1.2.1
+│  ├─ cjs-module-lexer@1.2.2
 │  │  ├─ URL: git+https://github.com/guybedford/cjs-module-lexer.git
 │  │  ├─ VendorName: Guy Bedford
 │  │  └─ VendorUrl: https://github.com/guybedford/cjs-module-lexer#readme
@@ -1547,7 +1584,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git@github.com:colorjs/color-name.git
 │  │  ├─ VendorName: DY
 │  │  └─ VendorUrl: https://github.com/colorjs/color-name
-│  ├─ colord@2.0.1
+│  ├─ colord@2.4.0
 │  │  ├─ URL: https://github.com/omgovich/colord.git
 │  │  └─ VendorName: Vlad Shilov
 │  ├─ colorette@1.2.2
@@ -1604,13 +1641,15 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/jonschlinkert/copy-descriptor.git
 │  │  ├─ VendorName: Jon Schlinkert
 │  │  └─ VendorUrl: https://github.com/jonschlinkert/copy-descriptor
-│  ├─ copy-webpack-plugin@9.0.0
+│  ├─ copy-webpack-plugin@9.0.1
 │  │  ├─ URL: https://github.com/webpack-contrib/copy-webpack-plugin.git
 │  │  ├─ VendorName: Len Boyette
 │  │  └─ VendorUrl: https://github.com/webpack-contrib/copy-webpack-plugin
-│  ├─ core-js-compat@3.14.0
+│  ├─ core-js-compat@3.16.0
 │  │  └─ URL: https://github.com/zloirock/core-js.git
-│  ├─ core-js-pure@3.14.0
+│  ├─ core-js-pure@3.16.0
+│  │  └─ URL: https://github.com/zloirock/core-js.git
+│  ├─ core-js@3.16.0
 │  │  └─ URL: https://github.com/zloirock/core-js.git
 │  ├─ core-util-is@1.0.2
 │  │  ├─ URL: git://github.com/isaacs/core-util-is
@@ -1636,7 +1675,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git://github.com/bahamas10/css-color-names.git
 │  │  ├─ VendorName: Dave Eddy
 │  │  └─ VendorUrl: http://www.daveeddy.com
-│  ├─ css-loader@5.2.6
+│  ├─ css-loader@6.2.0
 │  │  ├─ URL: https://github.com/webpack-contrib/css-loader.git
 │  │  ├─ VendorName: Tobias Koppers @sokra
 │  │  └─ VendorUrl: https://github.com/webpack-contrib/css-loader
@@ -1665,7 +1704,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  ├─ cssnano-utils@2.0.1
 │  │  ├─ URL: https://github.com/cssnano/cssnano.git
 │  │  └─ VendorUrl: https://github.com/cssnano/cssnano
-│  ├─ cssnano@5.0.6
+│  ├─ cssnano@5.0.7
 │  │  ├─ URL: https://github.com/cssnano/cssnano.git
 │  │  ├─ VendorName: Ben Briggs
 │  │  └─ VendorUrl: https://github.com/cssnano/cssnano
@@ -1698,14 +1737,14 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  ├─ debug@3.2.7
 │  │  ├─ URL: git://github.com/visionmedia/debug.git
 │  │  └─ VendorName: TJ Holowaychuk
-│  ├─ debug@4.3.1
+│  ├─ debug@4.3.2
 │  │  ├─ URL: git://github.com/visionmedia/debug.git
 │  │  └─ VendorName: TJ Holowaychuk
 │  ├─ decamelize@1.2.0
 │  │  ├─ URL: https://github.com/sindresorhus/decamelize.git
 │  │  ├─ VendorName: Sindre Sorhus
 │  │  └─ VendorUrl: sindresorhus.com
-│  ├─ decimal.js@10.2.1
+│  ├─ decimal.js@10.3.1
 │  │  ├─ URL: https://github.com/MikeMcl/decimal.js.git
 │  │  └─ VendorName: Michael Mclaughlin
 │  ├─ decode-uri-component@0.2.0
@@ -1767,7 +1806,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  └─ VendorUrl: https://github.com/iliakan/detect-node
 │  ├─ diff-sequences@26.6.2
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ diff-sequences@27.0.1
+│  ├─ diff-sequences@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
 │  ├─ dir-glob@3.0.1
 │  │  ├─ URL: https://github.com/kevva/dir-glob.git
@@ -1854,7 +1893,11 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git://github.com/ljharb/es-abstract.git
 │  │  ├─ VendorName: Jordan Harband
 │  │  └─ VendorUrl: http://ljharb.codes
-│  ├─ es-module-lexer@0.4.1
+│  ├─ es-cookie@1.3.2
+│  │  ├─ URL: git://github.com/theodorejb/es-cookie.git
+│  │  ├─ VendorName: Theodore Brown
+│  │  └─ VendorUrl: https://github.com/theodorejb/es-cookie
+│  ├─ es-module-lexer@0.7.1
 │  │  ├─ URL: git+https://github.com/guybedford/es-module-lexer.git
 │  │  ├─ VendorName: Guy Bedford
 │  │  └─ VendorUrl: https://github.com/guybedford/es-module-lexer#readme
@@ -1898,7 +1941,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git+https://github.com/mysticatea/eslint-utils.git
 │  │  ├─ VendorName: Toru Nagashima
 │  │  └─ VendorUrl: https://github.com/mysticatea/eslint-utils#readme
-│  ├─ eslint@7.29.0
+│  ├─ eslint@7.31.0
 │  │  ├─ URL: https://github.com/eslint/eslint.git
 │  │  ├─ VendorName: Nicholas C. Zakas
 │  │  └─ VendorUrl: https://eslint.org/
@@ -1931,7 +1974,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/jonschlinkert/expand-brackets.git
 │  │  ├─ VendorName: Jon Schlinkert
 │  │  └─ VendorUrl: https://github.com/jonschlinkert/expand-brackets
-│  ├─ expect@27.0.2
+│  ├─ expect@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
 │  ├─ express@4.17.1
 │  │  ├─ URL: https://github.com/expressjs/express.git
@@ -1953,7 +1996,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git+https://github.com/epoberezkin/fast-deep-equal.git
 │  │  ├─ VendorName: Evgeny Poberezkin
 │  │  └─ VendorUrl: https://github.com/epoberezkin/fast-deep-equal#readme
-│  ├─ fast-glob@3.2.5
+│  ├─ fast-glob@3.2.7
 │  │  ├─ URL: https://github.com/mrmlnc/fast-glob.git
 │  │  ├─ VendorName: Denis Malinochkin
 │  │  └─ VendorUrl: https://mrmlnc.com
@@ -2075,7 +2118,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/sindresorhus/globals.git
 │  │  ├─ VendorName: Sindre Sorhus
 │  │  └─ VendorUrl: sindresorhus.com
-│  ├─ globals@13.9.0
+│  ├─ globals@13.10.0
 │  │  ├─ URL: https://github.com/sindresorhus/globals.git
 │  │  ├─ VendorName: Sindre Sorhus
 │  │  └─ VendorUrl: https://sindresorhus.com
@@ -2165,7 +2208,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git+https://github.com/DanielRuf/html-minifier-terser.git
 │  │  ├─ VendorName: Daniel Ruf
 │  │  └─ VendorUrl: https://danielruf.github.io/html-minifier-terser/
-│  ├─ html-webpack-plugin@5.3.1
+│  ├─ html-webpack-plugin@5.3.2
 │  │  ├─ URL: https://github.com/jantimon/html-webpack-plugin.git
 │  │  ├─ VendorName: Jan Nicklas
 │  │  └─ VendorUrl: https://github.com/jantimon/html-webpack-plugin
@@ -2315,7 +2358,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git+https://github.com/pigcan/is-color-stop.git
 │  │  ├─ VendorName: pigcan
 │  │  └─ VendorUrl: https://github.com/pigcan/is-color-stop#readme
-│  ├─ is-core-module@2.4.0
+│  ├─ is-core-module@2.5.0
 │  │  ├─ URL: git+https://github.com/inspect-js/is-core-module.git
 │  │  ├─ VendorName: Jordan Harband
 │  │  └─ VendorUrl: https://github.com/inspect-js/is-core-module
@@ -2417,10 +2460,10 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/sindresorhus/is-stream.git
 │  │  ├─ VendorName: Sindre Sorhus
 │  │  └─ VendorUrl: sindresorhus.com
-│  ├─ is-stream@2.0.0
+│  ├─ is-stream@2.0.1
 │  │  ├─ URL: https://github.com/sindresorhus/is-stream.git
 │  │  ├─ VendorName: Sindre Sorhus
-│  │  └─ VendorUrl: sindresorhus.com
+│  │  └─ VendorUrl: https://sindresorhus.com
 │  ├─ is-string@1.0.6
 │  │  ├─ URL: git://github.com/ljharb/is-string.git
 │  │  └─ VendorName: Jordan Harband
@@ -2455,72 +2498,72 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/jonschlinkert/isobject.git
 │  │  ├─ VendorName: Jon Schlinkert
 │  │  └─ VendorUrl: https://github.com/jonschlinkert/isobject
-│  ├─ jest-changed-files@27.0.2
+│  ├─ jest-changed-files@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-circus@27.0.4
+│  ├─ jest-circus@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-cli@27.0.4
+│  ├─ jest-cli@27.0.6
 │  │  ├─ URL: https://github.com/facebook/jest
 │  │  └─ VendorUrl: https://jestjs.io/
-│  ├─ jest-config@27.0.4
+│  ├─ jest-config@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
 │  ├─ jest-diff@26.6.2
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-diff@27.0.2
+│  ├─ jest-diff@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-docblock@27.0.1
+│  ├─ jest-docblock@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-each@27.0.2
+│  ├─ jest-each@27.0.6
 │  │  ├─ URL: https://github.com/facebook/jest.git
 │  │  ├─ VendorName: Matt Phillips
 │  │  └─ VendorUrl: mattphillips
-│  ├─ jest-environment-jsdom@27.0.3
+│  ├─ jest-environment-jsdom@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-environment-node@27.0.3
+│  ├─ jest-environment-node@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
 │  ├─ jest-get-type@26.3.0
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-get-type@27.0.1
+│  ├─ jest-get-type@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-haste-map@27.0.2
+│  ├─ jest-haste-map@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-jasmine2@27.0.4
+│  ├─ jest-jasmine2@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-leak-detector@27.0.2
+│  ├─ jest-leak-detector@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-matcher-utils@27.0.2
+│  ├─ jest-matcher-utils@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-message-util@27.0.2
+│  ├─ jest-message-util@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-mock@27.0.3
+│  ├─ jest-mock@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
 │  ├─ jest-pnp-resolver@1.2.2
 │  │  ├─ URL: https://github.com/arcanis/jest-pnp-resolver.git
 │  │  └─ VendorUrl: https://github.com/arcanis/jest-pnp-resolver
-│  ├─ jest-regex-util@27.0.1
+│  ├─ jest-regex-util@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-resolve-dependencies@27.0.4
+│  ├─ jest-resolve-dependencies@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-resolve@27.0.4
+│  ├─ jest-resolve@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-runner@27.0.4
+│  ├─ jest-runner@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-runtime@27.0.4
+│  ├─ jest-runtime@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-serializer@27.0.1
+│  ├─ jest-serializer@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-snapshot@27.0.4
+│  ├─ jest-snapshot@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-util@27.0.2
+│  ├─ jest-util@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-validate@27.0.2
+│  ├─ jest-validate@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest-watcher@27.0.2
+│  ├─ jest-watcher@27.0.6
 │  │  ├─ URL: https://github.com/facebook/jest
 │  │  └─ VendorUrl: https://jestjs.io/
-│  ├─ jest-worker@27.0.2
+│  ├─ jest-worker@27.0.6
 │  │  └─ URL: https://github.com/facebook/jest.git
-│  ├─ jest@27.0.4
+│  ├─ jest@27.0.6
 │  │  ├─ URL: https://github.com/facebook/jest
 │  │  └─ VendorUrl: https://jestjs.io/
 │  ├─ js-tokens@4.0.0
@@ -2573,35 +2616,35 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  ├─ jsonfile@4.0.0
 │  │  ├─ URL: git@github.com:jprichardson/node-jsonfile.git
 │  │  └─ VendorName: JP Richardson
-│  ├─ jss-plugin-camel-case@10.6.0
+│  ├─ jss-plugin-camel-case@10.7.1
 │  │  ├─ URL: https://github.com/cssinjs/jss
 │  │  ├─ VendorName: JSS Team
 │  │  └─ VendorUrl: https://cssinjs.org/jss-camel-case
-│  ├─ jss-plugin-default-unit@10.6.0
+│  ├─ jss-plugin-default-unit@10.7.1
 │  │  ├─ URL: https://github.com/cssinjs/jss
 │  │  ├─ VendorName: JSS Team
 │  │  └─ VendorUrl: https://cssinjs.org/jss-default-unit
-│  ├─ jss-plugin-global@10.6.0
+│  ├─ jss-plugin-global@10.7.1
 │  │  ├─ URL: https://github.com/cssinjs/jss
 │  │  ├─ VendorName: JSS Team
 │  │  └─ VendorUrl: https://cssinjs.org/jss-global
-│  ├─ jss-plugin-nested@10.6.0
+│  ├─ jss-plugin-nested@10.7.1
 │  │  ├─ URL: https://github.com/cssinjs/jss
 │  │  ├─ VendorName: JSS Team
 │  │  └─ VendorUrl: https://cssinjs.org/jss-nested
-│  ├─ jss-plugin-props-sort@10.6.0
+│  ├─ jss-plugin-props-sort@10.7.1
 │  │  ├─ URL: https://github.com/cssinjs/jss
 │  │  ├─ VendorName: JSS Team
 │  │  └─ VendorUrl: https://cssinjs.org/jss-plugin-props-sort
-│  ├─ jss-plugin-rule-value-function@10.6.0
+│  ├─ jss-plugin-rule-value-function@10.7.1
 │  │  ├─ URL: https://github.com/cssinjs/jss
 │  │  ├─ VendorName: JSS Team
 │  │  └─ VendorUrl: https://cssinjs.org/
-│  ├─ jss-plugin-vendor-prefixer@10.6.0
+│  ├─ jss-plugin-vendor-prefixer@10.7.1
 │  │  ├─ URL: https://github.com/cssinjs/jss
 │  │  ├─ VendorName: JSS Team
 │  │  └─ VendorUrl: https://cssinjs.org/jss-plugin-vendor-prefixer
-│  ├─ jss@10.6.0
+│  ├─ jss@10.7.1
 │  │  ├─ URL: https://github.com/cssinjs/jss
 │  │  ├─ VendorName: JSS Team
 │  │  └─ VendorUrl: https://cssinjs.org/
@@ -2648,6 +2691,9 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git://github.com/gkz/levn.git
 │  │  ├─ VendorName: George Zahariev
 │  │  └─ VendorUrl: https://github.com/gkz/levn
+│  ├─ lilconfig@2.0.3
+│  │  ├─ URL: https://github.com/antonk52/lilconfig
+│  │  └─ VendorName: antonk52
 │  ├─ lines-and-columns@1.1.6
 │  │  ├─ URL: https://github.com/eventualbuddha/lines-and-columns.git
 │  │  ├─ VendorName: Brian Donovan
@@ -2749,9 +2795,9 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/micromatch/micromatch.git
 │  │  ├─ VendorName: Jon Schlinkert
 │  │  └─ VendorUrl: https://github.com/micromatch/micromatch
-│  ├─ mime-db@1.48.0
+│  ├─ mime-db@1.49.0
 │  │  └─ URL: https://github.com/jshttp/mime-db.git
-│  ├─ mime-types@2.1.31
+│  ├─ mime-types@2.1.32
 │  │  └─ URL: https://github.com/jshttp/mime-types.git
 │  ├─ mime@1.6.0
 │  │  ├─ URL: https://github.com/broofa/node-mime
@@ -2772,7 +2818,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  ├─ mini-create-react-context@0.4.1
 │  │  ├─ URL: https://github.com/StringEpsilon/mini-create-react-context
 │  │  └─ VendorName: StringEpsilon
-│  ├─ mini-css-extract-plugin@1.6.0
+│  ├─ mini-css-extract-plugin@2.1.0
 │  │  ├─ URL: https://github.com/webpack-contrib/mini-css-extract-plugin.git
 │  │  ├─ VendorName: Tobias Koppers @sokra
 │  │  └─ VendorUrl: https://github.com/webpack-contrib/mini-css-extract-plugin
@@ -2853,7 +2899,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/jamestalmage/normalize-range.git
 │  │  ├─ VendorName: James Talmage
 │  │  └─ VendorUrl: github.com/jamestalmage
-│  ├─ normalize-url@6.0.1
+│  ├─ normalize-url@6.1.0
 │  │  ├─ URL: https://github.com/sindresorhus/normalize-url.git
 │  │  ├─ VendorName: Sindre Sorhus
 │  │  └─ VendorUrl: https://sindresorhus.com
@@ -2881,7 +2927,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/puleos/object-hash
 │  │  ├─ VendorName: Scott Puleo
 │  │  └─ VendorUrl: https://github.com/puleos/object-hash
-│  ├─ object-inspect@1.10.3
+│  ├─ object-inspect@1.11.0
 │  │  ├─ URL: git://github.com/inspect-js/object-inspect.git
 │  │  ├─ VendorName: James Halliday
 │  │  └─ VendorUrl: https://github.com/inspect-js/object-inspect
@@ -3108,7 +3154,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/cssnano/cssnano.git
 │  │  ├─ VendorName: Justineo
 │  │  └─ VendorUrl: https://github.com/cssnano/cssnano
-│  ├─ postcss-loader@6.1.0
+│  ├─ postcss-loader@6.1.1
 │  │  ├─ URL: https://github.com/webpack-contrib/postcss-loader.git
 │  │  ├─ VendorName: Andrey Sitnik
 │  │  └─ VendorUrl: https://github.com/webpack-contrib/postcss-loader
@@ -3202,7 +3248,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/TrySound/postcss-value-parser.git
 │  │  ├─ VendorName: Bogdan Chadkin
 │  │  └─ VendorUrl: https://github.com/TrySound/postcss-value-parser
-│  ├─ postcss@8.3.5
+│  ├─ postcss@8.3.6
 │  │  ├─ URL: https://github.com/postcss/postcss.git
 │  │  ├─ VendorName: Andrey Sitnik
 │  │  └─ VendorUrl: https://postcss.org/
@@ -3214,13 +3260,13 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git://github.com/gkz/prelude-ls.git
 │  │  ├─ VendorName: George Zahariev
 │  │  └─ VendorUrl: http://preludels.com/
-│  ├─ pretty-error@2.1.2
+│  ├─ pretty-error@3.0.4
 │  │  ├─ URL: https://github.com/AriaMinaei/pretty-error.git
 │  │  └─ VendorName: Aria Minaei
 │  ├─ pretty-format@26.6.2
 │  │  ├─ URL: https://github.com/facebook/jest.git
 │  │  └─ VendorName: James Kyle
-│  ├─ pretty-format@27.0.2
+│  ├─ pretty-format@27.0.6
 │  │  ├─ URL: https://github.com/facebook/jest.git
 │  │  └─ VendorName: James Kyle
 │  ├─ process-nextick-args@2.0.1
@@ -3229,6 +3275,10 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  ├─ progress@2.0.3
 │  │  ├─ URL: git://github.com/visionmedia/node-progress
 │  │  └─ VendorName: TJ Holowaychuk
+│  ├─ promise-polyfill@8.2.0
+│  │  ├─ URL: https://github.com/taylorhakes/promise-polyfill.git
+│  │  ├─ VendorName: Taylor Hakes
+│  │  └─ VendorUrl: https://github.com/taylorhakes/promise-polyfill
 │  ├─ prompts@2.4.1
 │  │  ├─ URL: https://github.com/terkelg/prompts.git
 │  │  ├─ VendorName: Terkel Gjervig
@@ -3318,7 +3368,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git://github.com/paulmillr/readdirp.git
 │  │  ├─ VendorName: Thorsten Lorenz
 │  │  └─ VendorUrl: https://github.com/paulmillr/readdirp
-│  ├─ rechoir@0.7.0
+│  ├─ rechoir@0.7.1
 │  │  ├─ URL: https://github.com/gulpjs/rechoir.git
 │  │  ├─ VendorName: Gulp Team
 │  │  └─ VendorUrl: http://gulpjs.com/
@@ -3341,8 +3391,8 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/mathiasbynens/regenerate.git
 │  │  ├─ VendorName: Mathias Bynens
 │  │  └─ VendorUrl: https://mths.be/regenerate
-│  ├─ regenerator-runtime@0.13.7
-│  │  ├─ URL: https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime
+│  ├─ regenerator-runtime@0.13.9
+│  │  ├─ URL: https://github.com/facebook/regenerator/tree/master/packages/runtime
 │  │  └─ VendorName: Ben Newman
 │  ├─ regenerator-transform@0.14.5
 │  │  ├─ URL: https://github.com/facebook/regenerator/tree/master/packages/regenerator-transform
@@ -3471,7 +3521,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/webpack-contrib/sass-loader.git
 │  │  ├─ VendorName: J. Tangelder
 │  │  └─ VendorUrl: https://github.com/webpack-contrib/sass-loader
-│  ├─ sass@1.35.1
+│  ├─ sass@1.36.0
 │  │  ├─ URL: https://github.com/sass/dart-sass
 │  │  ├─ VendorName: Natalie Weizenbaum
 │  │  └─ VendorUrl: https://github.com/sass/dart-sass
@@ -3486,7 +3536,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/webpack/schema-utils.git
 │  │  ├─ VendorName: webpack Contrib
 │  │  └─ VendorUrl: https://github.com/webpack/schema-utils
-│  ├─ schema-utils@3.0.0
+│  ├─ schema-utils@3.1.1
 │  │  ├─ URL: https://github.com/webpack/schema-utils.git
 │  │  ├─ VendorName: webpack Contrib
 │  │  └─ VendorUrl: https://github.com/webpack/schema-utils
@@ -3565,10 +3615,6 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/sockjs/sockjs-node.git
 │  │  ├─ VendorName: Marek Majkowski
 │  │  └─ VendorUrl: https://github.com/sockjs/sockjs-node
-│  ├─ source-list-map@2.0.1
-│  │  ├─ URL: https://github.com/webpack/source-list-map.git
-│  │  ├─ VendorName: Tobias Koppers @sokra
-│  │  └─ VendorUrl: https://github.com/webpack/source-list-map
 │  ├─ source-map-resolve@0.5.3
 │  │  ├─ URL: https://github.com/lydell/source-map-resolve.git
 │  │  └─ VendorName: Simon Lydell
@@ -3665,7 +3711,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/sindresorhus/strip-json-comments.git
 │  │  ├─ VendorName: Sindre Sorhus
 │  │  └─ VendorUrl: https://sindresorhus.com
-│  ├─ style-loader@2.0.0
+│  ├─ style-loader@3.2.1
 │  │  ├─ URL: https://github.com/webpack-contrib/style-loader.git
 │  │  ├─ VendorName: Tobias Koppers @sokra
 │  │  └─ VendorUrl: https://github.com/webpack-contrib/style-loader
@@ -3693,13 +3739,10 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/jamestalmage/supports-hyperlinks.git
 │  │  ├─ VendorName: James Talmage
 │  │  └─ VendorUrl: github.com/jamestalmage
-│  ├─ svgo@2.3.0
+│  ├─ svgo@2.3.1
 │  │  ├─ URL: git://github.com/svg/svgo.git
 │  │  ├─ VendorName: Kir Belevich
 │  │  └─ VendorUrl: https://github.com/svg/svgo
-│  ├─ symbol-observable@1.2.0
-│  │  ├─ URL: https://github.com/blesh/symbol-observable.git
-│  │  └─ VendorName: Ben Lesh
 │  ├─ symbol-tree@3.2.4
 │  │  ├─ URL: https://github.com/jsdom/js-symbol-tree.git
 │  │  ├─ VendorName: Joris van der Wel
@@ -3712,7 +3755,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/sindresorhus/terminal-link.git
 │  │  ├─ VendorName: Sindre Sorhus
 │  │  └─ VendorUrl: sindresorhus.com
-│  ├─ terser-webpack-plugin@5.1.3
+│  ├─ terser-webpack-plugin@5.1.4
 │  │  ├─ URL: https://github.com/webpack-contrib/terser-webpack-plugin.git
 │  │  ├─ VendorName: webpack Contrib Team
 │  │  └─ VendorUrl: https://github.com/webpack-contrib/terser-webpack-plugin
@@ -3763,11 +3806,11 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  ├─ tr46@2.1.0
 │  │  ├─ URL: https://github.com/jsdom/tr46
 │  │  └─ VendorName: Sebastian Mayr
-│  ├─ ts-jest@27.0.3
+│  ├─ ts-jest@27.0.4
 │  │  ├─ URL: git+https://github.com/kulshekhar/ts-jest.git
 │  │  ├─ VendorName: Kulshekhar Kabra
 │  │  └─ VendorUrl: https://kulshekhar.github.io/ts-jest
-│  ├─ ts-loader@9.2.3
+│  ├─ ts-loader@9.2.4
 │  │  ├─ URL: https://github.com/TypeStrong/ts-loader.git
 │  │  ├─ VendorName: John Reilly
 │  │  └─ VendorUrl: https://github.com/TypeStrong/ts-loader
@@ -3808,6 +3851,9 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: git+https://github.com/ljharb/unbox-primitive.git
 │  │  ├─ VendorName: Jordan Harband
 │  │  └─ VendorUrl: https://github.com/ljharb/unbox-primitive#readme
+│  ├─ unfetch@4.2.0
+│  │  ├─ URL: https://github.com/developit/unfetch.git
+│  │  └─ VendorUrl: https://github.com/developit/unfetch
 │  ├─ unicode-canonical-property-names-ecmascript@1.0.4
 │  │  ├─ URL: https://github.com/mathiasbynens/unicode-canonical-property-names-ecmascript.git
 │  │  ├─ VendorName: Mathias Bynens
@@ -3853,7 +3899,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/webpack-contrib/url-loader.git
 │  │  ├─ VendorName: Tobias Koppers @sokra
 │  │  └─ VendorUrl: https://github.com/webpack-contrib/url-loader
-│  ├─ url-parse@1.5.1
+│  ├─ url-parse@1.5.3
 │  │  ├─ URL: https://github.com/unshiftio/url-parse.git
 │  │  └─ VendorName: Arnout Kazemier
 │  ├─ url@0.11.0
@@ -3920,15 +3966,11 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/survivejs/webpack-merge.git
 │  │  ├─ VendorName: Juho Vepsalainen
 │  │  └─ VendorUrl: https://github.com/survivejs/webpack-merge
-│  ├─ webpack-sources@1.4.3
+│  ├─ webpack-sources@3.1.1
 │  │  ├─ URL: git+https://github.com/webpack/webpack-sources.git
 │  │  ├─ VendorName: Tobias Koppers @sokra
 │  │  └─ VendorUrl: https://github.com/webpack/webpack-sources#readme
-│  ├─ webpack-sources@2.3.0
-│  │  ├─ URL: git+https://github.com/webpack/webpack-sources.git
-│  │  ├─ VendorName: Tobias Koppers @sokra
-│  │  └─ VendorUrl: https://github.com/webpack/webpack-sources#readme
-│  ├─ webpack@5.39.1
+│  ├─ webpack@5.47.1
 │  │  ├─ URL: https://github.com/webpack/webpack.git
 │  │  ├─ VendorName: Tobias Koppers @sokra
 │  │  └─ VendorUrl: https://github.com/webpack/webpack
@@ -3940,7 +3982,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/jsdom/whatwg-mimetype.git
 │  │  ├─ VendorName: Domenic Denicola
 │  │  └─ VendorUrl: https://domenic.me/
-│  ├─ whatwg-url@8.6.0
+│  ├─ whatwg-url@8.7.0
 │  │  ├─ URL: https://github.com/jsdom/whatwg-url.git
 │  │  └─ VendorName: Sebastian Mayr
 │  ├─ which-boxed-primitive@1.0.2
@@ -3966,7 +4008,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │  │  ├─ URL: https://github.com/websockets/ws.git
 │  │  ├─ VendorName: Einar Otto Stangvik
 │  │  └─ VendorUrl: https://github.com/websockets/ws
-│  ├─ ws@7.5.0
+│  ├─ ws@7.5.3
 │  │  ├─ URL: https://github.com/websockets/ws.git
 │  │  ├─ VendorName: Einar Otto Stangvik
 │  │  └─ VendorUrl: https://github.com/websockets/ws
@@ -3984,7 +4026,7 @@ info "fsevents@1.2.13" is an optional dependency and failed compatibility check.
 │     ├─ VendorName: Sindre Sorhus
 │     └─ VendorUrl: https://sindresorhus.com
 ├─ MPL-2.0
-│  └─ axe-core@4.2.2
+│  └─ axe-core@4.3.2
 │     ├─ URL: https://github.com/dequelabs/axe-core.git
 │     └─ VendorUrl: https://www.deque.com/axe/
 ├─ ODC-By-1.0
